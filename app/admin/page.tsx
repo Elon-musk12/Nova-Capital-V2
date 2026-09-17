@@ -1,0 +1,5 @@
+import Link from "next/link";
+
+export default function Admin() {
+  return <main className="appShell"><nav className="sideNav"><div className="brand compact"><span className="brandMark">N</span><b>NOVA CAPITAL</b></div><a className="active">⌂ Admin Overview</a><a>♙ Users</a><a>▤ Transactions</a><a>◈ Investments</a><a>▥ Reports</a><a>⚙ Settings</a><Link href="/">← Website</Link></nav><section className="workspace"><header><span>Admin Control Center</span><button>Secure session</button></header><div className="welcome"><p className="eyebrow">ADMINISTRATION</p><h1>Transaction Review</h1><p>Approve or reject requests only after independently verifying the underlying payment or withdrawal instruction.</p></div><div className="statGrid"><div><span>Pending Deposits</span><strong>0</strong></div><div><span>Pending Withdrawals</span><strong>0</strong></div><div><span>Users</span><strong>0</strong></div></div><div className="panel"><h2>Pending transactions</h2><div className="empty">No pending transactions. Connect Supabase and authenticate an admin account to load live records.</div></div></section></main>;
+}
